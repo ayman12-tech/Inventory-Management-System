@@ -28,6 +28,7 @@ namespace InventoryManagementSystem
 
         [Display(Name = "Password")]
         [Required(ErrorMessage = "*")]
+        [DataType(DataType.Password)]
         public string u_password { get; set; }
 
         [Display(Name = "Phone #")]
@@ -42,9 +43,10 @@ namespace InventoryManagementSystem
         [Required(ErrorMessage = "*")]
         public byte u_status { get; set; }
 
-
+        [Display(Name = "Select Role")]
+        [Required(ErrorMessage = "*")]
         public byte u_roleID { get; set; }
-    
+
         public virtual role role { get; set; }
     }
 }
