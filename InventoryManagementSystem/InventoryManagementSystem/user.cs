@@ -43,6 +43,7 @@ namespace InventoryManagementSystem
         [Required(ErrorMessage = "*")]
         public byte u_status { get; set; }
 
+        
         [Display(Name = "Select Role")]
         [Required(ErrorMessage = "*")]
         public byte u_roleID { get; set; }

@@ -27,6 +27,7 @@
             @Html.DisplayNameFor(model => model.u_email)
         </th>
         <th>
+            
             @Html.DisplayNameFor(model => model.u_status)
         </th>
         <th>
@@ -53,7 +54,16 @@
             @Html.DisplayFor(modelItem => item.u_email)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.u_status)
+            @{
+                if (item.u_status == Convert.ToByte(1))
+                {
+                    <p>Active</p>
+                }
+                else if (item.u_status == Convert.ToByte(0))
+                {
+                    <p>In-active</p>
+                }
+            }
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.role.r_name)
