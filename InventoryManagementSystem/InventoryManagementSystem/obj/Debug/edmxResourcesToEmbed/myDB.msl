@@ -33,5 +33,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="st_getLoginDetails" FunctionName="inventoryDBmvcModel.Store.st_getLoginDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="inventoryDBmvcModel.st_getLoginDetails_Result">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

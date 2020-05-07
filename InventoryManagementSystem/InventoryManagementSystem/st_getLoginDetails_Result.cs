@@ -13,16 +13,13 @@ namespace InventoryManagementSystem
 {
 
 using System;
-    using System.Collections.Generic;
     
-public partial class category
+public partial class st_getLoginDetails_Result
 {
 
-    public byte cat_id { get; set; }
+    public string Username { get; set; }
 
-    public string cat_name { get; set; }
-
-    public byte cat_status { get; set; }
+    public string Password { get; set; }
 
 }
 

@@ -53,5 +53,13 @@
       <End Role="roles" EntitySet="roles" />
       <End Role="users" EntitySet="users" />
     </AssociationSet>
+    <FunctionImport Name="st_getLoginDetails" ReturnType="Collection(inventoryDBmvcModel.st_getLoginDetails_Result)">
+      <Parameter Name="user" Mode="In" Type="String" />
+      <Parameter Name="pass" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="st_getLoginDetails_Result">
+    <Property Type="String" Name="Username" Nullable="false" MaxLength="40" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="20" />
+  </ComplexType>
 </Schema>
