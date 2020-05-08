@@ -2,12 +2,14 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_sideMenu.cshtml";
 }
 
-<h2>Index</h2>
+<br />
+<center><h2 class="text-primary font-weight-bold">Users</h2></center>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add New User", "Create")
 </p>
 <table class="table">
     <tr>
