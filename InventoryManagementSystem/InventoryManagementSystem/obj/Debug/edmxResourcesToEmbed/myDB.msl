@@ -41,5 +41,6 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="st_getRoleWRTuser" FunctionName="inventoryDBmvcModel.Store.st_getRoleWRTuser" />
   </EntityContainerMapping>
 </Mapping>

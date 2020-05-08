@@ -17,7 +17,31 @@ namespace InventoryManagementSystem.Controllers
         // GET: roles
         public ActionResult Index()
         {
-            return View(db.roles.ToList());
+            if(Session["role"]==null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if(Session["role"].ToString()=="Admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
         }
 
         // GET: roles/Details/5
@@ -33,11 +57,64 @@ namespace InventoryManagementSystem.Controllers
                 return HttpNotFound();
             }
             return View(role);
+
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "Admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
         }
 
         // GET: roles/Create
         public ActionResult Create()
+
         {
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "Admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+
             List<SelectListItem> li = new List<SelectListItem>();
             li.Add(new SelectListItem() { Text = "Active", Value = "1" });
             li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
@@ -69,7 +146,31 @@ namespace InventoryManagementSystem.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "Admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
 
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
             List<SelectListItem> li = new List<SelectListItem>();
             li.Add(new SelectListItem() { Text = "Active", Value = "1" });
             li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
@@ -102,6 +203,31 @@ namespace InventoryManagementSystem.Controllers
         // GET: roles/Delete/5
         public ActionResult Delete(byte? id)
         {
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "Admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+
+            if (Session["role"] == null)
+            {
+                return RedirectToAction("Index", "Auth");
+            }
+            else if (Session["role"].ToString() == "admin")
+            {
+                return View(db.roles.ToList());
+            }
+            else
+            {
+                return RedirectToAction("Index", "Auth");
+            }
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

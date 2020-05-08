@@ -57,6 +57,9 @@
       <Parameter Name="user" Mode="In" Type="String" />
       <Parameter Name="pass" Mode="In" Type="String" />
     </FunctionImport>
+    <FunctionImport Name="st_getRoleWRTuser" ReturnType="Collection(String)">
+      <Parameter Name="user" Mode="In" Type="String" />
+    </FunctionImport>
   </EntityContainer>
   <ComplexType Name="st_getLoginDetails_Result">
     <Property Type="String" Name="Username" Nullable="false" MaxLength="40" />

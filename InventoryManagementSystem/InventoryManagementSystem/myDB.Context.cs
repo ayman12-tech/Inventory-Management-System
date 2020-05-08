@@ -58,6 +58,18 @@ public partial class inventoryDBmvcEntities : DbContext
         return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<st_getLoginDetails_Result>("st_getLoginDetails", userParameter, passParameter);
     }
 
+
+    public virtual ObjectResult<string> st_getRoleWRTuser(string user)
+    {
+
+        var userParameter = user != null ?
+            new ObjectParameter("user", user) :
+            new ObjectParameter("user", typeof(string));
+
+
+        return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("st_getRoleWRTuser", userParameter);
+    }
+
 }
 
 }
