@@ -12,10 +12,11 @@
 namespace InventoryManagementSystem
 {
 
-using System;
+    using System;
     using System.Collections.Generic;
-    
-public partial class role
+    using System.ComponentModel.DataAnnotations;
+
+    public partial class role
 {
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -28,9 +29,9 @@ public partial class role
 
 
     public byte r_id { get; set; }
-
+    [Display(Name ="Role")]
     public string r_name { get; set; }
-
+    [Display(Name = "Status")]
     public byte r_status { get; set; }
 
 

@@ -47,3 +47,4 @@ E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManag
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\System.Web.Mvc.xml
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.dll
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.pdb
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.csprojResolveAssemblyReference.cache
