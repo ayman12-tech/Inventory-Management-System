@@ -28,11 +28,6 @@ namespace InventoryManagementSystem.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ViewBag.u_roleID = new SelectList(db.roles, "r_id", "r_name");
-            List<SelectListItem> li = new List<SelectListItem>();
-            li.Add(new SelectListItem() { Text = "Active", Value = "1" });
-            li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
-            ViewBag.abc = new SelectList(li, "Value", "Text");
             user user = db.users.Find(id);
             if (user == null)
             {
@@ -45,10 +40,6 @@ namespace InventoryManagementSystem.Controllers
         public ActionResult Create()
         {
             ViewBag.u_roleID = new SelectList(db.roles, "r_id", "r_name");
-            List<SelectListItem> li = new List<SelectListItem>();
-            li.Add(new SelectListItem() { Text = "Active", Value = "1" });
-            li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
-            ViewBag.abc = new SelectList(li, "Value", "Text");
             return View();
         }
 
@@ -77,13 +68,11 @@ namespace InventoryManagementSystem.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            ViewBag.u_roleID = new SelectList(db.roles, "r_id", "r_name");
+            user user = db.users.Find(id);
             List<SelectListItem> li = new List<SelectListItem>();
             li.Add(new SelectListItem() { Text = "Active", Value = "1" });
             li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
             ViewBag.abc = new SelectList(li, "Value", "Text");
-            return View();
-            user user = db.users.Find(id);
             if (user == null)
             {
                 return HttpNotFound();

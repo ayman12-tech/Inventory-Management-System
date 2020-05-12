@@ -5,10 +5,9 @@
     Layout = "~/Views/Shared/_sideMenu.cshtml";
 }
 
-
+<h2>Details</h2>
 
 <div>
-    <br />
     <center>
         <h2 class="text-primary font-weight-bold">Details</h2>
     </center>
@@ -59,7 +58,7 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.u_status, ViewBag.abc as SelectList)
+            @Html.DisplayFor(model => model.u_status)
         </dd>
 
         <dt>

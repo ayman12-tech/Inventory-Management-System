@@ -4,9 +4,10 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_sideMenu.cshtml";
 }
-
 <br />
-<center><h2 class="text-primary font-weight-bold">Users</h2></center>
+<center>
+    <h2 class="text-primary font-weight-bold">Users</h2>
+</center>
 
 <p>
     @Html.ActionLink("Add New User", "Create")
@@ -19,9 +20,7 @@
         <th>
             @Html.DisplayNameFor(model => model.u_username)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.u_password)
-        </th>
+        
         <th>
             @Html.DisplayNameFor(model => model.u_phone)
         </th>
@@ -29,7 +28,6 @@
             @Html.DisplayNameFor(model => model.u_email)
         </th>
         <th>
-            
             @Html.DisplayNameFor(model => model.u_status)
         </th>
         <th>
@@ -46,9 +44,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.u_username)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.u_password)
-        </td>
+       
         <td>
             @Html.DisplayFor(modelItem => item.u_phone)
         </td>
@@ -56,15 +52,13 @@
             @Html.DisplayFor(modelItem => item.u_email)
         </td>
         <td>
-            @{
-                if (item.u_status == Convert.ToByte(1))
-                {
-                    <p>Active</p>
-                }
-                else if (item.u_status == Convert.ToByte(0))
-                {
-                    <p>In-active</p>
-                }
+            @if(item.u_status==1)
+            {
+                @Html.Label("Active");
+            }
+            else
+            {
+                @Html.Label("In-active");
             }
         </td>
         <td>
@@ -72,7 +66,7 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.u_id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.u_id }) |
+          
             @Html.ActionLink("Delete", "Delete", new { id=item.u_id })
         </td>
     </tr>
