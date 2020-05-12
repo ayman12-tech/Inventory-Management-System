@@ -40,9 +40,16 @@ namespace InventoryManagementSystem.Controllers
         public ActionResult Create()
         {
             ViewBag.u_roleID = new SelectList(db.roles, "r_id", "r_name");
+            craeteCombo();
             return View();
         }
-
+        public void craeteCombo()
+        {
+            List<SelectListItem> li = new List<SelectListItem>();
+            li.Add(new SelectListItem() { Text = "Active", Value = "1" });
+            li.Add(new SelectListItem() { Text = "In-active", Value = "0" });
+            ViewBag.abc = new SelectList(li, "Value", "Text");
+        }
         // POST: users/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.

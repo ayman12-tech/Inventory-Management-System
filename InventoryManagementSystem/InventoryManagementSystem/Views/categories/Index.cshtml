@@ -5,12 +5,10 @@
     Layout = "~/Views/Shared/_sideMenu.cshtml";
 }
 
-<br />
-<center><h2 class="text-primary font-weight-bold">Categories</h2></center>
-
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Add New Category", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -29,7 +27,15 @@
             @Html.DisplayFor(modelItem => item.cat_name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.cat_status)
+            @if (item.cat_status == 1)
+            {
+                @Html.Label("Active");
+            }
+            else
+            {
+                @Html.Label("In-active");
+            }
+            
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.cat_id }) |

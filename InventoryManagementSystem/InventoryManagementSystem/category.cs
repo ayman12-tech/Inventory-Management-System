@@ -21,7 +21,7 @@ namespace InventoryManagementSystem
 
         public byte cat_id { get; set; }
         [Display(Name ="Category Name")]
-    public string cat_name { get; set; }
+        public string cat_name { get; set; }
         [Display(Name = "Category Status")]
         public byte cat_status { get; set; }
 
