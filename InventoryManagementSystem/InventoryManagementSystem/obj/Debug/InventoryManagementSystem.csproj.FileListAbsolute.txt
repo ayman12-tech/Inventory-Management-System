@@ -47,4 +47,9 @@ E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManag
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\System.Web.Mvc.xml
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.dll
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.pdb
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\Microsoft.Web.Helpers.dll
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\WebMatrix.Data.dll
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\WebMatrix.WebData.dll
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\WebMatrix.Data.xml
+E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\bin\WebMatrix.WebData.xml
 E:\PROJECTS\Inventory-Management-System\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\InventoryManagementSystem.csprojResolveAssemblyReference.cache
