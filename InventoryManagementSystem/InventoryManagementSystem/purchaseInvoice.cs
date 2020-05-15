@@ -15,29 +15,31 @@ namespace InventoryManagementSystem
 using System;
     using System.Collections.Generic;
     
-public partial class role
+public partial class purchaseInvoice
 {
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public role()
+    public purchaseInvoice()
     {
 
-        this.users = new HashSet<user>();
+        this.PIDetails = new HashSet<PIDetail>();
 
     }
 
 
-    public byte r_id { get; set; }
+    public long pi_id { get; set; }
 
-    public string r_name { get; set; }
+    public System.DateTime pi_date { get; set; }
 
-    public byte r_status { get; set; }
+    public int pi_suppID { get; set; }
 
 
 
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
 
-    public virtual ICollection<user> users { get; set; }
+    public virtual ICollection<PIDetail> PIDetails { get; set; }
+
+    public virtual supplier supplier { get; set; }
 
 }
 

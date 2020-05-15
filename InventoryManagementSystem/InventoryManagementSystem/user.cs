@@ -12,28 +12,26 @@
 namespace InventoryManagementSystem
 {
 
-    using System;
+using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
-    public partial class user
+    
+public partial class user
 {
 
     public int u_id { get; set; }
-        [Display(Name ="Name")]
+
     public string u_name { get; set; }
-        [Display(Name ="Username")]
+
     public string u_username { get; set; }
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+
     public string u_password { get; set; }
-        [Display(Name = "Phone no")]
+
     public string u_phone { get; set; }
-        [Display(Name = "Email")]
+
     public string u_email { get; set; }
-        [Display(Name = "Status")]
+
     public byte u_status { get; set; }
-        [Display(Name ="Roles")]
+
     public byte u_roleID { get; set; }
 
 

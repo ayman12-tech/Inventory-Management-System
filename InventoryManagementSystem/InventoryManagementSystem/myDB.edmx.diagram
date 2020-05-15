@@ -9,6 +9,13 @@
         <EntityTypeShape EntityType="inventoryDBmvcModel.role" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="inventoryDBmvcModel.user" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="inventoryDBmvcModel.FK__users__u_roleID__3B75D760" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="inventoryDBmvcModel.PIDetail" Width="1.5" PointX="7.875" PointY="5.125" />
+        <EntityTypeShape EntityType="inventoryDBmvcModel.product" Width="1.5" PointX="7.875" PointY="0.875" />
+        <EntityTypeShape EntityType="inventoryDBmvcModel.purchaseInvoice" Width="1.5" PointX="5.625" PointY="5" />
+        <EntityTypeShape EntityType="inventoryDBmvcModel.supplier" Width="1.5" PointX="3.375" PointY="4.875" />
+        <AssociationConnector Association="inventoryDBmvcModel.FK__PIDetails__pid_p__6477ECF3" />
+        <AssociationConnector Association="inventoryDBmvcModel.FK__purchaseI__pi_su__619B8048" />
+        <AssociationConnector Association="inventoryDBmvcModel.FK_PIDetails_products" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -41,6 +41,14 @@ public partial class inventoryDBmvcEntities : DbContext
 
     public virtual DbSet<user> users { get; set; }
 
+    public virtual DbSet<PIDetail> PIDetails { get; set; }
+
+    public virtual DbSet<product> products { get; set; }
+
+    public virtual DbSet<purchaseInvoice> purchaseInvoices { get; set; }
+
+    public virtual DbSet<supplier> suppliers { get; set; }
+
 
     public virtual ObjectResult<st_getLoginDetails_Result> st_getLoginDetails(string user, string pass)
     {

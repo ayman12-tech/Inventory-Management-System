@@ -12,18 +12,17 @@
 namespace InventoryManagementSystem
 {
 
-    using System;
+using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
+    
+public partial class category
+{
 
-    public partial class category
-    {
+    public byte cat_id { get; set; }
 
-        public byte cat_id { get; set; }
-        [Display(Name ="Category Name")]
-        public string cat_name { get; set; }
-        [Display(Name = "Category Status")]
-        public byte cat_status { get; set; }
+    public string cat_name { get; set; }
+
+    public byte cat_status { get; set; }
 
 }
 

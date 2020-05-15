@@ -42,5 +42,44 @@
       </ResultMapping>
     </FunctionImportMapping>
     <FunctionImportMapping FunctionImportName="st_getRoleWRTuser" FunctionName="inventoryDBmvcModel.Store.st_getRoleWRTuser" />
+    <EntitySetMapping Name="PIDetails">
+      <EntityTypeMapping TypeName="inventoryDBmvcModel.PIDetail">
+        <MappingFragment StoreEntitySet="PIDetails">
+          <ScalarProperty Name="pid_proID" ColumnName="pid_proID" />
+          <ScalarProperty Name="pid_purchaseID" ColumnName="pid_purchaseID" />
+          <ScalarProperty Name="pid_id" ColumnName="pid_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="inventoryDBmvcModel.product">
+        <MappingFragment StoreEntitySet="products">
+          <ScalarProperty Name="pro_expiryDate" ColumnName="pro_expiryDate" />
+          <ScalarProperty Name="pro_barcode" ColumnName="pro_barcode" />
+          <ScalarProperty Name="pro_name" ColumnName="pro_name" />
+          <ScalarProperty Name="pro_id" ColumnName="pro_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchaseInvoices">
+      <EntityTypeMapping TypeName="inventoryDBmvcModel.purchaseInvoice">
+        <MappingFragment StoreEntitySet="purchaseInvoice">
+          <ScalarProperty Name="pi_suppID" ColumnName="pi_suppID" />
+          <ScalarProperty Name="pi_date" ColumnName="pi_date" />
+          <ScalarProperty Name="pi_id" ColumnName="pi_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suppliers">
+      <EntityTypeMapping TypeName="inventoryDBmvcModel.supplier">
+        <MappingFragment StoreEntitySet="suppliers">
+          <ScalarProperty Name="sup_openBalance" ColumnName="sup_openBalance" />
+          <ScalarProperty Name="sup_phone" ColumnName="sup_phone" />
+          <ScalarProperty Name="sup_address" ColumnName="sup_address" />
+          <ScalarProperty Name="sup_name" ColumnName="sup_name" />
+          <ScalarProperty Name="sup_id" ColumnName="sup_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
