@@ -255,7 +255,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\Views\web.config" />
+    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -267,27 +267,27 @@
     <Content Include="myDB.edmx.diagram">
       <DependentUpon>myDB.edmx</DependentUpon>
     </Content>
-    <Content Include="fonts\Views\_ViewStart.cshtml" />
-    <Content Include="fonts\Views\Shared\_Layout.cshtml" />
-    <Content Include="fonts\Views\roles\Create.cshtml" />
-    <Content Include="fonts\Views\roles\Delete.cshtml" />
-    <Content Include="fonts\Views\roles\Details.cshtml" />
-    <Content Include="fonts\Views\roles\Edit.cshtml" />
-    <Content Include="fonts\Views\roles\Index.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\roles\Create.cshtml" />
+    <Content Include="Views\roles\Delete.cshtml" />
+    <Content Include="Views\roles\Details.cshtml" />
+    <Content Include="Views\roles\Edit.cshtml" />
+    <Content Include="Views\roles\Index.cshtml" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="fonts\Views\users\Create.cshtml" />
-    <Content Include="fonts\Views\users\Delete.cshtml" />
-    <Content Include="fonts\Views\users\Details.cshtml" />
-    <Content Include="fonts\Views\users\Edit.cshtml" />
-    <Content Include="fonts\Views\users\Index.cshtml" />
-    <Content Include="fonts\Views\categories\Create.cshtml" />
-    <Content Include="fonts\Views\categories\Delete.cshtml" />
-    <Content Include="fonts\Views\categories\Details.cshtml" />
-    <Content Include="fonts\Views\categories\Edit.cshtml" />
-    <Content Include="fonts\Views\categories\Index.cshtml" />
-    <Content Include="fonts\Views\Auth\Index.cshtml" />
-    <Content Include="fonts\Views\Auth\Main.cshtml" />
-    <Content Include="fonts\Views\Shared\_sideMenu.cshtml" />
+    <Content Include="Views\users\Create.cshtml" />
+    <Content Include="Views\users\Delete.cshtml" />
+    <Content Include="Views\users\Details.cshtml" />
+    <Content Include="Views\users\Edit.cshtml" />
+    <Content Include="Views\users\Index.cshtml" />
+    <Content Include="Views\categories\Create.cshtml" />
+    <Content Include="Views\categories\Delete.cshtml" />
+    <Content Include="Views\categories\Details.cshtml" />
+    <Content Include="Views\categories\Edit.cshtml" />
+    <Content Include="Views\categories\Index.cshtml" />
+    <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Auth\Main.cshtml" />
+    <Content Include="Views\Shared\_sideMenu.cshtml" />
     <Content Include="Views\Purchaseinvoice\Create.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
